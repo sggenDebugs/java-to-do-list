@@ -35,8 +35,10 @@ public class Task {
         return isCompleted;
     }
 
+    // Updated method to include logging
     public void markAsCompleted() {
         this.isCompleted = true;
+        System.out.println("Task ID " + id + " marked as completed."); // Log completion
     }
 
 // Method to set the deadline with validation
